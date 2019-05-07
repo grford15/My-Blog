@@ -1,7 +1,7 @@
 ---
 title: Hello World
-date: "2019-05-02T22:12:03.284Z"
-description: "Part One of my story so far"
+date: "2019-05-02"
+description: Part One of my story so far
 ---
 
 #Hello World ... 

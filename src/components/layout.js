@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import HeaderImg from './header-img'
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -11,6 +12,12 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
+        <div
+          style={{
+            display: `flex`,
+            marginBottom: rhythm(1)
+          }}>
+          <HeaderImg />
         <h1
           style={{
             ...scale(1.5),
@@ -26,12 +33,15 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
+          
             {title}
           </Link>
         </h1>
+        </div>
       )
     } else {
       header = (
+        
         <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
@@ -61,7 +71,12 @@ class Layout extends React.Component {
         }}
       >
         <header>{header}</header>
-        <main>{children}</main>
+        <main
+          style={{
+            marginBottom: rhythm(1.5)
+          }}>
+        {children}
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -71,5 +86,6 @@ class Layout extends React.Component {
     )
   }
 }
+
 
 export default Layout
