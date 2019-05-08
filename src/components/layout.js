@@ -78,9 +78,21 @@ class Layout extends React.Component {
         {children}
         </main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built by me with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org"
+            style={{
+              backgroundImage: 'unset'
+            }}>
+          Gatsby
+          </a>
+          {` `}
+          See more of my work <a href="https://cranky-morse-72e50d.netlify.com/"
+            style={{
+              backgroundImage: 'unset'
+            }}>
+           here
+          </a>
         </footer>
       </div>
     )

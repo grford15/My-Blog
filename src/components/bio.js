@@ -8,6 +8,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { SocialIcon } from 'react-social-icons'
 
 import { rhythm } from "../utils/typography"
 
@@ -38,10 +39,26 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> | A Software Developer in training, Glasgow, UK.
-              {` `}
+              Written by <strong>{author}</strong> | A Software Developer in training, Glasgow, UK  
+             {` `}
             </p>
+            <div
+              style={{
+                display: 'flex'
+              }}>
+            <SocialIcon url="https://github.com/grford15" bgColor="#0D0106"
+            style={{
+              backgroundImage: 'unset',
+              margin: '2px'
+            }} />
+            <SocialIcon url="https://www.linkedin.com/in/greg-rutherford/"
+            style={{
+              backgroundImage: 'unset',
+              margin: '2px'
+            }} />
+            </div>
           </div>
+          
         )
       }}
     />
